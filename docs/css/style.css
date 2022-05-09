@@ -52,7 +52,7 @@ header {
     padding: 0;
 }
 
-.release__li__anchor, a:visited, a:hover, a:active {
+.release__li__anchor, .release__li__anchor:visited, .release__li__anchor:hover, .release__li__anchor:active {
     color: inherit;
     text-decoration: none;
 }
@@ -71,6 +71,9 @@ header {
     border: 0;
     padding-left: 15px;
     vertical-align:middle;
+    /* 値がわからないため適当 */
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .keyword__form__search-button {
@@ -82,6 +85,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* 値がわからないため適当 */
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 .release-type {
@@ -96,7 +102,7 @@ header {
     list-style-type: none;
 }
 
-.release-type__li_anchor, a:visited, a:hover, a:active {
+.release__li__anchor, .release__li__anchor:visited, .release__li__anchor:hover, .release__li__anchor:active {
     color: inherit;
     text-decoration: none;
 }
