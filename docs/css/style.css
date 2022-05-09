@@ -9,15 +9,14 @@ header {
 }
 
 .header-container {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 1125px;
+    padding: 13px 0 10px;
 }
 
 .header-small-container {
     display: flex;
     align-items: center;
-    padding-top: 13px;
 }
 
 .header-text {
@@ -30,92 +29,91 @@ header {
     background-color: #345584;
     /* 値がわからないため適当 */
     border-radius: 5px;
-    padding: 0px 8px;
+    padding: 9px 8px;
     display: flex;
-    margin: 0px 0px 0px 36px;
+    margin-left: 36px;
 }
 
-.release li {
+.release__li {
     font-size: 13px;
     line-height: 18px;
     align-items: center;
     color: #FFFFFF;
-    padding: 9px 0px;
     list-style-type: none;
 }
 
-.release li::after {
+.release__li::after {
     content: "|";
     padding: 5px;
 }
 
-.release li:last-child:after {
+.release__li:last-child:after {
     content: "";
     padding: 0;
 }
 
-
-.release li a, a:visited, a:hover, a:active {
+.release__li__anchor, a:visited, a:hover, a:active {
     color: inherit;
     text-decoration: none;
 }
 
 .keyword {
-    display: inline;
     margin-left: 11px;
 }
 
-.search-input {
+.keyword__form {
+    display: flex;
+}
+
+.keyword__form__search-input {
     height: 30px;
     width: 258px;
     border: 0;
-    padding: 0px 0px 0px 15px;
+    padding-left: 15px;
     vertical-align:middle;
 }
 
-.search-button {
+.keyword__form__search-button {
     background-color: #3081C9;
     height: 30px;
     width: 30px;
     border: 0;
     vertical-align:middle;
-}
-
-.main-header {
-    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .release-type {
-    padding-left: 0;
-    margin: 0;
+    display: flex;
 }
 
-.release-type li {
-    display: inline;
+.release-type__li {
     font-size: 13px;
     line-height: 20px;
     align-items: center;
     color: #BFC9D7;
+    list-style-type: none;
 }
 
-.release-type li a, a:visited, a:hover, a:active {
+.release-type__li_anchor, a:visited, a:hover, a:active {
     color: inherit;
     text-decoration: none;
 }
 
-.release-type li:first-child {
+.release-type__li:first-child {
     font-weight: bold;
     color: #FFFFFF;
 }
 
-.release-type li::after {
+.release-type__li::after {
     content: "|";
     font-weight: normal;
     padding: 5px;
     color: #BFC9D7;
 }
 
-.release-type li:last-child:after {
+.release-type__li:last-child:after {
     content: "";
     padding: 0;
 }
