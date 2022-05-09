@@ -125,3 +125,83 @@ header {
 }
 
 /* main */
+
+.nav {
+    background-color: #FFFFFF;
+}
+
+.nav__ul {
+    display: flex;
+    justify-content: center;
+    padding: 13px 0px 11px;
+    color: #294C7A;
+    font-size: 13px;
+}
+
+.nav__ul__li {
+    padding-left: 20px;
+}
+
+.nav__ul__li:first-child {
+    font-weight: bold;
+}
+
+.ranking {
+    background: #F2F2F2;
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    padding: 22px 0px;
+    display: flex;
+}
+
+.card {
+    width: 181px;
+    height: auto;
+    position: relative;
+    margin-left: 8px;
+}
+
+.card__ranking {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    background-color: #294C7A;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    line-height: 25px;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+}
+
+.card__text-box{
+    width: 100%;
+    height: auto;
+    padding: 8px 10px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.card__text-box__title {
+    font-size: 13px;
+    color: #3B3B3B;
+}
+
+.card__text-box__text {
+    font-size: 12px;
+    color: #A2A2A2;
+}
+
+.card__text-box__time::before {
+    width: 15px;
+    height: 15px;
+    content: '';
+    display: inline-block;
+    background: url(../img/time.png) no-repeat center;
+    background-size: cover;
+    vertical-align: middle;
+}
