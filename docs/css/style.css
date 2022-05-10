@@ -214,11 +214,11 @@ header {
 .main-contents {
     margin: 40px auto 70px;
     width: 1127px;
+    display: flex;
 }
 
 .contents {
     width: 779px;
-    float: left;
 }
 
 .contents__title {
@@ -296,7 +296,6 @@ header {
 
 .aside {
     width: 312px;
-    float: right;
     margin-left: 36px;
 }
 
@@ -311,6 +310,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #E4E4E4;
 }
 
 .keyword {
