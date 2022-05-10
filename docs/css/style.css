@@ -57,15 +57,15 @@ header {
     text-decoration: none;
 }
 
-.keyword {
+.search-keyword {
     margin-left: 11px;
 }
 
-.keyword__form {
+.search-keyword__form {
     display: flex;
 }
 
-.keyword__form__search-input {
+.search-keyword__form__search-input {
     height: 30px;
     width: 258px;
     border: 0;
@@ -76,7 +76,7 @@ header {
     border-bottom-left-radius: 3px;
 }
 
-.keyword__form__search-button {
+.search-keyword__form__search-button {
     background-color: #3081C9;
     height: 30px;
     width: 30px;
@@ -207,4 +207,125 @@ header {
     background: url(../img/time.png) no-repeat center;
     background-size: cover;
     vertical-align: middle;
+}
+
+/* main-contents */
+
+.main-contents {
+    margin: 0 auto;
+    width: 1127px;
+    margin-top: 40px;
+}
+
+.contents {
+    width: 779px;
+    float: left;
+}
+
+.contents__title {
+    font-size: 24px;
+    color: #3B3B3B;
+    /* figma通りfont-weight: 400にすると見た目がかけ離れているためboldにした */
+    font-weight: bold;
+}
+
+.press-releases {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.press-release {
+    width: 380px;
+    display: flex;
+    padding: 15px 0px 17px;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+.press-release:not(:nth-child(odd)) {
+    margin-left: 18px;
+}
+
+.press-release__text-box__title {
+    font-size: 14px;
+    color: #3B3B3B;
+    /* figma通りfont-weight: 400にすると見た目がかけ離れているためboldにした */
+    font-weight: bold;
+}
+
+.press-release__text-box__detail {
+    font-size: 13px;
+    color: #A2A2A2;
+    display: flex;
+    margin-top: 6px;
+}
+
+.press-release__text-box__detail__company {
+    margin-left: 6px;
+}
+
+.press-release__text-box__detail__time::before {
+    width: 15px;
+    height: 15px;
+    content: '';
+    display: inline-block;
+    background: url(../img/time.png) no-repeat center;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.press-release__img {
+    width: 100px;
+    height: 66px;
+    margin-left: 15px;
+}
+
+.contents__view_more_button {
+    width: 110px;
+    height: 38px;
+    background: #3081C9;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 0;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.aside {
+    width: 312px;
+    float: right;
+    margin-left: 36px;
+}
+
+.aside__title {
+    font-size: 18px;
+    color: #3B3B3B;
+    /* figma通りfont-weight: 400にすると見た目がかけ離れているためboldにした */
+    font-weight: bold;
+}
+
+.keywords {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.keyword {
+    font-size: 12px;
+    background: #F1F1F1;
+    border-radius: 11px;
+    color: #3B3B3B;
+    padding: 0 8px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    margin: 0 10px 9px 0;
+}
+
+.keyword__view_more {
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
 }
