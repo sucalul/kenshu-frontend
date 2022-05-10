@@ -212,9 +212,8 @@ header {
 /* main-contents */
 
 .main-contents {
-    margin: 0 auto;
+    margin: 40px auto 70px;
     width: 1127px;
-    margin-top: 40px;
 }
 
 .contents {
@@ -292,6 +291,7 @@ header {
     margin: 30px auto 0;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 33px;
 }
 
 .aside {
