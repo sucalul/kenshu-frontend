@@ -102,11 +102,6 @@ header {
     list-style-type: none;
 }
 
-.release__anchor, .release__anchor:visited, .release__anchor:hover, .release__anchor:active {
-    color: inherit;
-    text-decoration: none;
-}
-
 .release-type__li:first-child {
     font-weight: bold;
     color: #FFFFFF;
