@@ -161,6 +161,9 @@ header {
     width: 181px;
     height: auto;
     position: relative;
+}
+
+.card:not(:first-child) {
     margin-left: 8px;
 }
 
