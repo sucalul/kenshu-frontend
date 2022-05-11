@@ -194,19 +194,18 @@ header {
     color: #A2A2A2;
 }
 
-.card__text--time {
-    font-size: 12px;
-    color: #A2A2A2;
+.card__time {
+    display: flex;
+    align-items: center;
 }
 
-.card__text--time:before {
+.card__time .card__text {
+    margin-left: 5px;
+}
+
+.card__time-img {
     width: 15px;
     height: 15px;
-    content: '';
-    display: inline-block;
-    background: url(../img/time.png) no-repeat center;
-    background-size: cover;
-    vertical-align: middle;
 }
 
 /* main-contents */
@@ -257,20 +256,20 @@ header {
     color: #A2A2A2;
     display: flex;
     margin-top: 6px;
+    align-items: center;
 }
 
 .press-release__company {
     margin-left: 6px;
 }
 
-.press-release__time::before {
+.press-release__time-img {
     width: 15px;
     height: 15px;
-    content: '';
-    display: inline-block;
-    background: url(../img/time.png) no-repeat center;
-    background-size: cover;
-    vertical-align: middle;
+}
+
+.press-release__time {
+    margin-left: 5px;
 }
 
 .press-release__img {
