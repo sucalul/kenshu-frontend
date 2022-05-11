@@ -52,7 +52,7 @@ header {
     padding: 0;
 }
 
-.release__li__anchor, .release__li__anchor:visited, .release__li__anchor:hover, .release__li__anchor:active {
+.release__anchor, .release__anchor:visited, .release__anchor:hover, .release__anchor:active {
     color: inherit;
     text-decoration: none;
 }
@@ -65,7 +65,7 @@ header {
     display: flex;
 }
 
-.search-keyword__form__search-input {
+.search-keyword__search-input {
     height: 30px;
     width: 258px;
     border: 0;
@@ -76,7 +76,7 @@ header {
     border-bottom-left-radius: 3px;
 }
 
-.search-keyword__form__search-button {
+.search-keyword__search-button {
     background-color: #3081C9;
     height: 30px;
     width: 30px;
@@ -100,11 +100,6 @@ header {
     align-items: center;
     color: #BFC9D7;
     list-style-type: none;
-}
-
-.release__li__anchor, .release__li__anchor:visited, .release__li__anchor:hover, .release__li__anchor:active {
-    color: inherit;
-    text-decoration: none;
 }
 
 .release-type__li:first-child {
@@ -138,11 +133,11 @@ header {
     font-size: 13px;
 }
 
-.nav__ul__li {
+.nav__li {
     padding-left: 20px;
 }
 
-.nav__ul__li:first-child {
+.nav__li:first-child {
     font-weight: bold;
 }
 
@@ -189,17 +184,22 @@ header {
     box-sizing: border-box;
 }
 
-.card__text-box__title {
+.card__title {
     font-size: 13px;
     color: #3B3B3B;
 }
 
-.card__text-box__text {
+.card__text {
     font-size: 12px;
     color: #A2A2A2;
 }
 
-.card__text-box__time::before {
+.card__text--time {
+    font-size: 12px;
+    color: #A2A2A2;
+}
+
+.card__text--time:before {
     width: 15px;
     height: 15px;
     content: '';
@@ -245,25 +245,25 @@ header {
     margin-left: 18px;
 }
 
-.press-release__text-box__title {
+.press-release__title {
     font-size: 14px;
     color: #3B3B3B;
     /* figma通りfont-weight: 400にすると見た目がかけ離れているためboldにした */
     font-weight: bold;
 }
 
-.press-release__text-box__detail {
+.press-release__detail {
     font-size: 13px;
     color: #A2A2A2;
     display: flex;
     margin-top: 6px;
 }
 
-.press-release__text-box__detail__company {
+.press-release__company {
     margin-left: 6px;
 }
 
-.press-release__text-box__detail__time::before {
+.press-release__time::before {
     width: 15px;
     height: 15px;
     content: '';
@@ -363,7 +363,7 @@ header {
     margin-top: 18px;
 }
 
-.footer-item__detail__no-title {
+.footer-item__no-title {
     padding-top: 18px;
 }
 
