@@ -278,7 +278,7 @@ header {
     margin-left: 15px;
 }
 
-.contents__view_more_button {
+.contents__view--more {
     width: 110px;
     height: 38px;
     background: #3081C9;
@@ -325,7 +325,7 @@ header {
     margin: 0 10px 9px 0;
 }
 
-.keyword__view_more {
+.keyword__view--more {
     background: #FFFFFF;
     border: 1px solid #F1F1F1;
 }
