@@ -194,7 +194,12 @@ header {
     color: #A2A2A2;
 }
 
-.card__time::before {
+.card__text--time {
+    font-size: 12px;
+    color: #A2A2A2;
+}
+
+.card__text--time:before {
     width: 15px;
     height: 15px;
     content: '';
