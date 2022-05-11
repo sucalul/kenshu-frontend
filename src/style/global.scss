@@ -1,0 +1,347 @@
+/* header */
+body {
+    margin: 0;
+    font-family: 'Hiragino Kaku Gothic ProN';
+}
+
+header {
+    background-color: #24436F;
+}
+
+.header-container {
+    margin: 0 auto;
+    width: 1125px;
+    padding: 13px 0 10px;
+}
+
+.header-small-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-text {
+    color: #BFC9D7;
+    font-size: 12px;
+    margin-left: 18px;
+}
+
+.release {
+    background-color: #345584;
+    /* 値がわからないため適当 */
+    border-radius: 5px;
+    padding: 9px 8px;
+    display: flex;
+    margin-left: 36px;
+    &__li {
+        font-size: 13px;
+        line-height: 18px;
+        align-items: center;
+        color: #FFFFFF;
+        list-style-type: none;
+        &::after {
+            content: "|";
+            padding: 5px;
+        }
+        &:last-child::after {
+            content: "";
+            padding: 0;
+        }
+    }
+    &anchor, &anchor:visited, &anchor:hover, &anchor:active {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.search-keyword {
+    margin-left: 11px;
+    &__form {
+        display: flex;
+    }
+    &__search-input {
+        height: 30px;
+        width: 258px;
+        border: 0;
+        padding-left: 15px;
+        vertical-align:middle;
+        /* 値がわからないため適当 */
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+    &__search-button {
+        background-color: #3081C9;
+        height: 30px;
+        width: 30px;
+        border: 0;
+        vertical-align:middle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* 値がわからないため適当 */
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+}
+
+.release-type {
+    display: flex;
+    &__li {
+        font-size: 13px;
+        line-height: 20px;
+        align-items: center;
+        color: #BFC9D7;
+        list-style-type: none;
+        &:first-child {
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+        &::after {
+            content: "|";
+            font-weight: normal;
+            padding: 5px;
+            color: #BFC9D7;
+        }
+        &:last-child::after {
+            content: "";
+            padding: 0;
+        }
+    }
+}
+
+.nav {
+    background-color: #FFFFFF;
+    &__ul {
+        display: flex;
+        justify-content: center;
+        padding: 13px 0px 11px;
+        color: #294C7A;
+        font-size: 13px;
+    }
+    &__li {
+        padding-left: 20px;
+        &:first-child {
+            font-weight: bold;
+        }
+    }
+}
+
+.ranking {
+    background: #F2F2F2;
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    padding: 22px 0px;
+    display: flex;
+}
+
+.card {
+    width: 181px;
+    height: auto;
+    position: relative;
+    &:not(:first-child) {
+        margin-left: 8px;
+    }
+    &__ranking {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        background-color: #294C7A;
+        text-align: center;
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 700;
+        line-height: 25px;
+        color: #FFFFFF;
+        letter-spacing: 4px;
+    }
+    &__text-box{
+        width: 100%;
+        height: auto;
+        padding: 8px 10px;
+        background: #FFFFFF;
+        box-sizing: border-box;
+    }
+    &__title {
+        font-size: 13px;
+        color: #3B3B3B;
+    }
+    &__text {
+        font-size: 12px;
+        color: #A2A2A2;
+        .card__time & {
+            margin-left: 5px;
+        }
+    }
+    &__time {
+        display: flex;
+        align-items: center;
+    }
+    &__time-img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+/* main-contents */
+
+.main-contents {
+    margin: 40px auto 70px;
+    width: 1127px;
+    display: flex;
+}
+
+.contents {
+    width: 779px;
+    &__title {
+        font-size: 24px;
+        color: #3B3B3B;
+        /* figma通りfont-weight: 400にすると見た目がかけ離れているためboldにした */
+        font-weight: bold;
+    }
+    &__more {
+        width: 110px;
+        height: 38px;
+        background: #3081C9;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
+        border-radius: 2px;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto 33px;
+        align-items: center;
+    }
+}
+
+.press-releases {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.press-release {
+    width: 380px;
+    display: flex;
+    padding: 15px 0px 17px;
+    border-bottom: 1px solid #E4E4E4;
+
+    &:not(:nth-child(odd)) {
+        margin-left: 18px;
+    }
+    &__title {
+        font-size: 14px;
+        color: #3B3B3B;
+        /* figma通りfont-weight: 400にすると見た目がかけ離れているためboldにした */
+        font-weight: bold;
+    }
+    &__detail {
+        font-size: 13px;
+        color: #A2A2A2;
+        display: flex;
+        margin-top: 6px;
+        align-items: center;
+    }
+    &__company {
+        margin-left: 6px;
+    }
+    &__time {
+        margin-left: 5px;
+    }
+    &__time-img {
+        width: 15px;
+        height: 15px;
+    }
+    &__img {
+        width: 100px;
+        height: 66px;
+        margin-left: 15px;
+    }
+}
+
+.aside {
+    width: 312px;
+    margin-left: 36px;
+    &__title {
+        font-size: 18px;
+        color: #3B3B3B;
+        /* figma通りfont-weight: 400にすると見た目がかけ離れているためboldにした */
+        font-weight: bold;
+    }
+}
+
+.keywords {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+.keyword {
+    font-size: 12px;
+    background: #F1F1F1;
+    border-radius: 11px;
+    color: #3B3B3B;
+    padding: 0 8px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    margin: 0 10px 9px 0;
+    &__more {
+        background: #FFFFFF;
+        border: 1px solid #F1F1F1;
+    }
+}
+
+/* footer */
+.footer {
+    background: #FAFAFA;
+}
+
+.footer-content {
+    margin: 0 auto;
+    width: 1125px;
+}
+
+.footer-list {
+    padding-top: 60px;
+    display: flex;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 38px;
+}
+
+.footer-item {
+    width: 281px;
+    &__title {
+        font-size: 13px;
+        color: #000000;
+    }
+    &__detail {
+        font-size: 12px;
+        color: #797979;
+        margin-top: 18px;
+    }
+    &__no-title {
+        padding-top: 18px;
+    }
+}
+
+.footer-term {
+    margin-top: 16px;
+    display: flex;
+    font-size: 12px;
+    color: #797979;
+    &__text:not(:first-child) {
+        margin-left: 20px;
+    }
+}
+
+.footer-copyright {
+    margin-top: 18px;
+    margin-bottom: 9px;
+    &__text {
+        font-size: 11px;
+        color: #797979;
+    }
+}
